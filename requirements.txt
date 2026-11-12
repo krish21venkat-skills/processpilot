@@ -1,0 +1,7 @@
+boto3
+python-dotenv
+chromadb
+langgraph-checkpoint-sqlite
+langgraph
+requests
+mcp<2

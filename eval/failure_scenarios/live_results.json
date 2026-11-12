@@ -1,0 +1,93 @@
+[
+  {
+    "scenario": "success",
+    "outcome": "SUCCESS",
+    "expected": "SUCCESS",
+    "bot_runs": 1,
+    "expected_runs": 1,
+    "secs": 11,
+    "tokens": [
+      456,
+      77
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "transient timeout",
+    "outcome": "SUCCESS",
+    "expected": "SUCCESS",
+    "bot_runs": 2,
+    "expected_runs": 2,
+    "secs": 45,
+    "tokens": [
+      1147,
+      137
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "persistent timeout",
+    "outcome": "ESCALATED",
+    "expected": "ESCALATED",
+    "bot_runs": 3,
+    "expected_runs": 3,
+    "secs": 71,
+    "tokens": [
+      2662,
+      327
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "bad date, fix approved",
+    "outcome": "SUCCESS",
+    "expected": "SUCCESS",
+    "bot_runs": 2,
+    "expected_runs": 2,
+    "secs": 18,
+    "tokens": [
+      1167,
+      137
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "bad date, fix rejected",
+    "outcome": "FIX_NOT_APPLIED",
+    "expected": "FIX_NOT_APPLIED",
+    "bot_runs": 1,
+    "expected_runs": 1,
+    "secs": 11,
+    "tokens": [
+      1167,
+      137
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "missing field",
+    "outcome": "RETURNED",
+    "expected": "RETURNED",
+    "bot_runs": 1,
+    "expected_runs": 1,
+    "secs": 11,
+    "tokens": [
+      1164,
+      138
+    ],
+    "pass": true
+  },
+  {
+    "scenario": "duplicate",
+    "outcome": "RETURNED",
+    "expected": "RETURNED",
+    "bot_runs": 1,
+    "expected_runs": 1,
+    "secs": 11,
+    "tokens": [
+      1161,
+      144
+    ],
+    "pass": true
+  }
+]

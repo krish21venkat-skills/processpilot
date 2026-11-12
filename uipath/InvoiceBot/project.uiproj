@@ -1,0 +1,6 @@
+{
+  "Name": "InvoiceBot",
+  "ProjectType": "Process",
+  "Description": "Robotic Enterprise Framework - InvoiceBot",
+  "MainFile": "Main.xaml"
+}

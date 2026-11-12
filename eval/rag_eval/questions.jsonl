@@ -1,0 +1,20 @@
+{"id":"q01","question":"Who can approve an invoice of INR 5,00,000?","covered":true,"expected":["POL-01 §2"],"must_include":["controller"]}
+{"id":"q02","question":"Can an employee approve an invoice that they entered themselves?","covered":true,"expected":["POL-01 §3"],"must_include":["no|not|cannot|prohibited"]}
+{"id":"q03","question":"What happens to an invoice with the same vendor and invoice number as an earlier one?","covered":true,"expected":["POL-02 §1","POL-02 §2"],"must_include":["reject"]}
+{"id":"q04","question":"A credit note arrives for an earlier invoice. Is it treated as a duplicate?","covered":true,"expected":["POL-02 §3"],"must_include":["no|not"]}
+{"id":"q05","question":"Can we accept an invoice from a vendor whose status is Pending?","covered":true,"expected":["POL-03 §1"],"must_include":["reject|no|not"]}
+{"id":"q06","question":"How long is a bank detail change held before it is used for payment?","covered":true,"expected":["POL-03 §3"],"must_include":["48"]}
+{"id":"q07","question":"Can a bot change a vendor's bank account number?","covered":true,"expected":["POL-03 §3","POL-06 §4"],"must_include":["no|not|never|cannot"]}
+{"id":"q08","question":"How many characters should a GSTIN have?","covered":true,"expected":["POL-04 §1"],"must_include":["15"]}
+{"id":"q09","question":"Which GST type applies when goods move between two states?","covered":true,"expected":["POL-04 §2"],"must_include":["IGST"]}
+{"id":"q10","question":"What GST rates are permitted?","covered":true,"expected":["POL-04 §3"],"must_include":["5","12","18","28"]}
+{"id":"q11","question":"Above what invoice amount is a purchase order required?","covered":true,"expected":["POL-05 §1"],"must_include":["50,000|50000"]}
+{"id":"q12","question":"What is the quantity tolerance in three-way matching?","covered":true,"expected":["POL-05 §2"],"must_include":["5%"]}
+{"id":"q13","question":"What should happen to an invoice that is dated in the future?","covered":true,"expected":["POL-05 §3"],"must_include":["reject"]}
+{"id":"q14","question":"How many times may a bot retry a system exception?","covered":true,"expected":["POL-06 §3"],"must_include":["2"]}
+{"id":"q15","question":"Can a bot automatically retry a missing-field error?","covered":true,"expected":["POL-06 §2"],"must_include":["no|not|must not"]}
+{"id":"q16","question":"Who receives escalations for unknown failures?","covered":true,"expected":["POL-06 §5"],"must_include":["L2"]}
+{"id":"q17","question":"How long are audit logs retained?","covered":true,"expected":["POL-07 §2"],"must_include":["8"]}
+{"id":"q18","question":"What is the company's travel reimbursement limit?","covered":false}
+{"id":"q19","question":"What is the penalty for paying a vendor late?","covered":false}
+{"id":"q20","question":"How many days of annual leave do employees get?","covered":false}
